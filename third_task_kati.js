@@ -52,7 +52,7 @@
 // YOUR ANSWER
 // ---------------------------------------------------- //
 /*function removeFirstOccurrences(str, value) {
-	var index = str.indexOf(value);
+	let index = str.indexOf(value);
 	if (index === -1) {
 		return str;
 	}
@@ -77,7 +77,7 @@ console.log(removeFirstOccurrences("ABABAB",'BA'));
 /*function convertToUpperCase(str) {
   return str.toUpperCase();
   }
-  console.log('abcdefghijklmnopqrstuvwxyz'.toUpperCase());
+  console.log(convertToUpperCase('abcdefghijklmnopqrstuvwxyz'));
   */
 // ---------------------------------------------------- //
 
@@ -96,7 +96,7 @@ console.log(removeFirstOccurrences("ABABAB",'BA'));
 /*function removeLeadingAndTrailingWhitespaces(value) {
   return value.trim();
   }
-  console.log ('\tHello, World'.trim());
+  console.log (removeLeadingAndTrailingWhitespaces('\tHello, World'));
   */
   
 // ---------------------------------------------------- //
@@ -184,10 +184,7 @@ console.log (getParallelipidedDiagonal(1,2,3 ));
 // YOUR ANSWER
 // ---------------------------------------------------- //
 /*function roundToPowerOfTen(num, pow) {
-  if (num % Math.pow(10, pow) >= 5 * Math.pow(10, pow - 1)) {
-  return num + ( Math.pow(10, pow) - num % Math.pow(10, pow));
-  }
-  return num - (num % Math.pow(10, pow));
+ return Math.round(num / (10 ** pow)) * (10 ** pow);
   }
   console.log(roundToPowerOfTen(1678, 3));
   */
@@ -346,7 +343,7 @@ console.log(toArrayOfSquares(num));
 }
 const elements = ['rock', 'paper', 'scissors'];
 
-console.log (elements.join());
+console.log (toStringList([1, 2, 3, 4, 5]));
 */
 // ---------------------------------------------------- //
 
@@ -419,9 +416,9 @@ console.log(parseDataFromIso8601('2016-01-19T16:07:37+00:00'));
 // YOUR ANSWER
 // ---------------------------------------------------- //
 /*function getJSON(obj) {
-  return JSON.stringify([1,2,3]);
+  return JSON.stringify();
   }
-  console.log (getJSON(JSON.stringify));
+  console.log (getJSON([1,2,3]));
   */
 // ---------------------------------------------------- //
 
